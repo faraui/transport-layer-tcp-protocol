@@ -13,13 +13,13 @@ my $PORT = 20000;
 my $PROTO = 'tcp';
 
 my $server = IO::Socket->new(
-    Domain => AF_INET,
-    Type => SOCK_STREAM,
-    Proto => $PROTO,
-    LocalHost => $HOST,
-    LocalPort => $PORT,
-    ReusePort => 1,
-    Listen => 5,
+  Domain => AF_INET,
+  Type => SOCK_STREAM,
+  Proto => $PROTO,
+  LocalHost => $HOST,
+  LocalPort => $PORT,
+  ReusePort => 1,
+  Listen => 5,
 ) or die "Can not open socket: $IO::Socket::errstr";
 
 print "$PROTO server running on $HOST:$PORT \n";
