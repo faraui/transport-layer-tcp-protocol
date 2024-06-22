@@ -12,6 +12,21 @@ chmod ugo+x *.pl *.pm *.sh
 ./install.sh
 ```
 
+## Structure
+```diff
+[  13K] transport-layer-tcp-protocol
+!! [  754] LICENSE.txt
+~~ [ 1.6K] README.md
+~~ [  508] install.sh
+++ [ 1.5K] pack.pl
+++ [  694] resend.pl
+++ [ 6.7K] transport-layer-tcp-protocol.pm
+++ [  637] unpack.pl
+++ [ 1019] unpack_auto.pl
+
+8 files, 1 directory
+```
+
 ## Usage
 **./pack.pl** *file* **>** *transmit-file*
 > *file* is an original file that is to be obtained by the receiver.\
@@ -24,6 +39,11 @@ chmod ugo+x *.pl *.pm *.sh
 >> In such case, `unpack.pl` will decode the received-file.\
 >> In other case, `unpack.pl` will report on damaged blocks and create a `confimed.txt` file.\
 >> `confirmed.txt` should be obtained by the transmitter, e.g. via Telegram =)
+
+**./unpack_tcp.pl**
+> Identical to the latter command, except this one listens `127.0.0.1:20000` infinitely and stores each *received-file* in `received-files` direcory.
+>> Can process multiple files with different names concurrently.
+>> **GNU Radio** should be configured as a client sending data to `127.0.0.1:20000`.
 
 **./resend.pl** *transmit-file* *confirmed-file* > *resend-file*
 > *transmit-file* and *confirmed-file* are as stated above.\
