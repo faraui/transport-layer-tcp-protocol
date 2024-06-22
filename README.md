@@ -13,3 +13,7 @@ chmod ugo+x *.pl *.pm *.sh
 ```
 
 ## Usage
+**./pack.pl** *file* **>** *transmit-file*
+> *file* - an original file that is to be obtained by the receiver.\
+> *transmit-file* is a file that is transmitted via **QRadioLink** or **GNU Radio** to attain such obtaining.
+>> *transmit-file* must be stored untill the radio transmission is succesfully completed.
