@@ -5,8 +5,8 @@ Transport layer TCP-protocol template in which the corrupted blocks are identifi
 ```bash
 git clone https://github.com/faraui/transport-layer-tcp-protocol.git
 cd transport-layer-tcp-protocol
-chmod ugo+x *.pl
-bash install.sh
+chmod ugo+x *.pl *.pm *.sh
+./install.sh
 ```
 
 ## Usage
