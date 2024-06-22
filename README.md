@@ -42,7 +42,7 @@ chmod ugo+x *.pl *.pm *.sh
 
 **./unpack_tcp.pl**
 > Identical to the latter command, except this one listens `127.0.0.1:20000` infinitely and stores each *received-file* in `received-files` direcory.
->> Can process multiple files with different names concurrently.
+>> Can process multiple files with different names concurrently.\
 >> **GNU Radio** should be configured as a client sending data to `127.0.0.1:20000`.
 
 **./resend.pl** *transmit-file* *confirmed-file* > *resend-file*
