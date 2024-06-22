@@ -17,3 +17,12 @@ chmod ugo+x *.pl *.pm *.sh
 > *file* is an original file that is to be obtained by the receiver.\
 > *transmit-file* is a file that is transmitted via **QRadioLink** or **GNU Radio** to attain such obtaining.
 >> *transmit-file* must be stored untill the radio transmission is succesfully completed.
+**./unpack.pl** *received-file*
+> *received-file* is a file where the data received by **QRadioLink** or **GNU Radio** is stored.
+>> If the transmission was succesfull, the *received-file* is identical to *transmit-file*.
+>> In such case, `unpack.pl` will decode the received-file.
+>> In other case, `unpack.pl` will report on damaged blocks and create a `confimed.txt` file.
+>> `confirmed.txt` should be obtained by the transmitter, e.g. via Telegram =)
+**./resend.pl** *transmit-file* *confirmed-file* > *resend-file*
+> *transmit-file* and *confirmed-file* are as stated above.
+> *resend-file* is a file consisting of blocks that are to be resended to the receiver.
