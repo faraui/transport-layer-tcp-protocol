@@ -1,7 +1,7 @@
 # transport-layer-tcp-protocol
 Transport layer TCP-protocol template in which the corrupted blocks are identified and resent to the adressee. Was used in conjunction with **QRadioLink** to communicate via radio transmitters.
 
-![QRadioLink](https://github.com/faraui/transport-layer-tcp-protocol/assets/170811164/da3369ff-1ff6-4a25-a0f8-d95ec6b2b151)
+![QRadioLink](https://github.com/faraui/transport-layer-tcp-protocol/assets/170811164/8b8f9a25-015d-4a90-a6db-7bc348543464)
 
 
 ## Installation
