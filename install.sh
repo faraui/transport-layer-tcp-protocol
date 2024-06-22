@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if ! command -v cpanm &> /dev/null
 then echo -n "Installing 'App::cpanminus' ..."
      ( cpan App::cpanminus > /dev/null 2> install.log && \
