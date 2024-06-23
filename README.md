@@ -20,9 +20,9 @@ Transport layer TCP-protocol template in which the corrupted blocks are identifi
 
 ## Installation
 ```bash
-git clone https://github.com/faraui/transport-layer-tcp-protocol.git
-cd transport-layer-tcp-protocol
-chmod ugo+x *.pl *.pm *.sh
+git clone -q https://github.com/faraui/transport-layer-tcp-protocol.git && \
+cd transport-layer-tcp-protocol && \
+chmod ugo+x *.p* *.sh && \
 ./install.sh
 ```
 
